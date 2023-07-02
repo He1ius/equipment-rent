@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда Оборудования</title>
+    <!-- STYLES -->
+        <!-- OWL-CAROUSEL -->
+        <link rel="stylesheet" href="./../../libs/owl-carousel/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../../libs/owl-carousel/css/owl.theme.default.min.css">    
+        <!-- MAIN -->
+        <link rel="stylesheet" href="./../../css/styles.css">
+        <link rel="stylesheet" href="./../../css/reset.css">
+    <!-- SCRIPTS -->
+        <!-- JQUERY -->
+        <script src="./../../libs/jquery/js/jquery.min.js" defer></script>
+        <!-- OWL-CAROUSEL -->
+        <script src="./../../libs/owl-carousel/js/owl.carousel.min.js" defer></script>
+        <!-- MAIN -->
+        <script src="./../../js/main.js" defer></script>
+
+    
+</head>
+<body class="page">
+    <header class="header page__header">
+        <div class="container">
+            <div class="row user-interaction-elements header__user-interaction-elements">
+                <!-- logo -->
+                <div class="col-4 col-md-3">
+                    <a href="#">
+                        <img src="./../../img/index/header/logo.svg" alt="logo" srcset="" class="scale">
+                    </a>
+                </div>
+                <!-- search-->
+                <div class="d-none d-md-block col-md-3 col-lg-4">
+                    <form method="GET" action="" class="search scale">
+                        <input type="submit" name="submit" class="search__submit" value="">
+                        <input type="text" name="text" class="search__text">
+                    </form>
+                </div>
+                <!-- favourites and cart -->
+                <div class="col-7 col-md-6 col-lg-4">
+                    <div class="interaction-elements">
+                        <button class="interaction-elements__item">
+                            <svg width="47" height="42" viewBox="0 0 47 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="interaction-elements__favourites scale">
+                                <path d="M30.6282 2.24205L30.6282 2.24203C32.0153 1.71738 33.5031 1.46558 35.0001 1.50378C36.497 1.54198 37.9678 1.86929 39.3221 2.46343L39.9247 1.08982L39.3221 2.46344C40.6759 3.05736 41.8822 3.90428 42.8702 4.94838L42.8715 4.94976C45.6731 7.90276 46.1578 12.0325 44.6963 15.5899C42.8026 20.1992 39.1357 24.5062 35.1029 28.6404L35.1029 28.6405C33.6853 30.0938 32.2505 31.4997 30.8352 32.8864L30.8346 32.8871L30.8338 32.8879L30.8331 32.8885L30.8049 32.9162C28.2167 35.452 25.6788 37.9386 23.5572 40.4354C23.1294 40.0367 22.6886 39.6274 22.2384 39.2094L22.1581 39.1349L22.158 39.1348C18.9078 36.1178 15.1497 32.6285 11.7065 28.9265C7.70269 24.6216 4.13735 20.0431 2.26636 15.5876L2.26635 15.5876C1.72323 14.2943 1.4646 12.9126 1.50389 11.5259C1.54319 10.1391 1.87973 8.77178 2.49595 7.5067C3.11218 6.24159 3.99641 5.10296 5.09932 4.16295L5.10075 4.16173C9.50786 0.396008 16.4454 0.980172 20.6476 4.96844L20.6477 4.96845L22.5384 6.76284L23.571 7.74283L24.6036 6.76282L26.9396 4.54577C26.9396 4.54575 26.9396 4.54572 26.9396 4.5457C27.9869 3.55187 29.2411 2.76663 30.6282 2.24205ZM23.5642 40.5002L23.5638 40.5002L23.5641 40.5002C23.5642 40.5002 23.5642 40.5002 23.5642 40.5002Z" stroke="black" stroke-width="3"/>
+                            </svg>                             
+                            <div class="interaction-elements__favourites-count">2</div>
+                        </button>
+                        <button class="interaction-elements__item">
+                            <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg" class="interaction-elements__cart scale">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2314 4.19195C22.5691 3.36682 21.3132 3.36683 20.651 4.19194L9.77553 17.7417C9.2036 18.4542 8.16231 18.5683 7.44974 17.9963C6.73717 17.4244 6.62316 16.3831 7.19509 15.6705L18.0705 2.1208C20.0573 -0.354561 23.8251 -0.354554 25.8119 2.1208L36.6873 15.6705C37.2592 16.3831 37.1452 17.4244 36.4326 17.9963C35.7201 18.5683 34.6788 18.4542 34.1069 17.7417L23.2314 4.19195Z" fill="#373737"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.8627 18.6914H9.01964C5.42369 18.6914 2.7897 22.0775 3.67446 25.5629L6.47423 36.5924C7.09502 39.0379 9.29632 40.7502 11.8194 40.7502H32.0629C34.586 40.7502 36.7873 39.0379 37.4081 36.5924L40.2078 25.563C41.0926 22.0775 38.4586 18.6914 34.8627 18.6914ZM9.01964 15.3826C3.26613 15.3826 -0.94826 20.8004 0.467349 26.377L3.26713 37.4065C4.26039 41.3193 7.78247 44.059 11.8194 44.059H32.0629C36.0998 44.059 39.6219 41.3193 40.6152 37.4065L43.4149 26.3771C44.8305 20.8004 40.6162 15.3826 34.8627 15.3826H9.01964Z" fill="#373737"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.9463 24.7828C30.8461 24.9414 31.4469 25.7995 31.2882 26.6993L29.7324 35.5229C29.5738 36.4227 28.7157 37.0235 27.8159 36.8649C26.916 36.7062 26.3152 35.8481 26.4739 34.9483L28.0297 26.1248C28.1884 25.2249 29.0464 24.6241 29.9463 24.7828Z" fill="#373737"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9332 24.7828C13.0334 24.9414 12.4325 25.7995 12.5912 26.6993L14.147 35.5229C14.3057 36.4227 15.1638 37.0235 16.0636 36.8649C16.9634 36.7062 17.5643 35.8481 17.4056 34.9483L15.8498 26.1248C15.6911 25.2249 14.833 24.6241 13.9332 24.7828Z" fill="#373737"/>
+                            </svg>
+                            <div class="interaction-elements__cart-count">3</div>
+                        </button>
+                        <div class="login">
+                            <p class="text">Егор Твердохлеб</p>
+                            <button class="interaction-elements__item">
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" class="interaction-elements__favourites scale">
+                                    <path d="M37.0196 38.7714C37.0196 31.7172 28.8758 30.1569 23.0588 30.1569C17.2418 30.1569 9.09806 31.7172 9.09806 38.7714M44 23.1765C44 34.7421 34.6244 44.1177 23.0588 44.1177C11.4934 44.1177 2.11768 34.7421 2.11768 23.1765C2.11768 11.611 11.4934 2.23535 23.0588 2.23535C34.6244 2.23535 44 11.611 44 23.1765ZM30.0392 16.1961C30.0392 20.0514 26.9141 23.1765 23.0588 23.1765C19.2036 23.1765 16.0785 20.0514 16.0785 16.1961C16.0785 12.341 19.2036 9.21574 23.0588 9.21574C26.9141 9.21574 30.0392 12.341 30.0392 16.1961Z" stroke="black" stroke-width="3.49019" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <nav class="navigation__items">
+                    <ul class="navigation__wrapper">
+                        <li>
+                            <a href="#" class="button shadow">Микшерные пульты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button shadow">Радиосистемы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button shadow">Микрофоны</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button shadow">Диммерные пр.</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button shadow">Динамические пр.</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button shadow">Генераторы эффектов</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button shadow">Генераторы эффектов</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button shadow">Генераторы эффектов</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button shadow">Генераторы эффектов</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button shadow">Генераторы эффектов</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="detail-cart main__detail-cart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="shadow detail-cart__img">
+                            <img src="./../../img/index/catalog/catalog__img.png" alt="detail-img" srcset="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="detail-cart__contant">
+                            <h2 class="detail-cart__title h2">Midas PRO2C-CC-TP</h2>
+                            <div class="detail-cart__desc">Очень мега крутой микшер, я честно говоря в восторге от такого микшера. Микшер для настоящих музыкантов. Он повидал даже Аллу Пугчеву, Лепса, Майкла Джексона и даже Майкла Джордана</div>
+                            <div class="detail-cart__container">
+                                <div class="detail-cart__wrapp">
+                                    <div class="detail-cart__price price--lg">3000 ₽ / час</div>
+                                    <div class="detail-cart__count count">
+                                        <button class="border button count__reduce">-</button>
+                                        <div class="count__value price">2</div>
+                                        <button class="border button count__add">+</button>
+                                    </div>
+                                </div>
+                                <div class="button button--violet detail-cart__btn">В КОРЗИНУ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery main__gallery">
+            <div class="container">
+                <h2 class="h2 gallery__title">Галерея</h2>
+                <div class="owl-carousel owl-theme owl-carousel--three">
+                    <div class="gallery__item shadow">
+                        <img src="./../../img/index/catalog/catalog__img.png" alt="catalog__img">
+                    </div>
+                    <div class="gallery__item shadow">
+                        <img src="./../../img/index/catalog/catalog__img.png" alt="catalog__img">
+                    </div>
+                    <div class="gallery__item shadow">
+                        <img src="./../../img/index/catalog/catalog__img.png" alt="catalog__img">
+                    </div>
+                    <div class="gallery__item shadow">
+                        <img src="./../../img/index/catalog/catalog__img.png" alt="catalog__img">
+                    </div>
+                    <div class="gallery__item shadow">
+                        <img src="./../../img/index/catalog/catalog__img.png" alt="catalog__img">
+                    </div>
+                    <div class="gallery__item shadow">
+                        <img src="./../../img/index/catalog/catalog__img.png" alt="catalog__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="specifications main__specifications">
+            <div class="container">
+                <h2 class="specifications__title h2">Характеристики</h2>
+                <div class="specifications__text">
+                    <ul class="specifications__ul">
+                        <li class="specifications__li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quibusdam iure atque harum aut quidem reprehenderit ullam consequatur quia illo placeat nobis quo unde error at eaque consectetur eveniet neque magni voluptatem, a animi accusantium odit! Omnis doloremque obcaecati deserunt?</li>
+                        <li class="specifications__li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ea?</li>
+                        <li class="specifications__li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum amet culpa perspiciatis delectus quos cupiditate magni facilis quaerat est repellat error vitae eveniet cumque exercitationem, deserunt commodi earum nisi!</li>
+                        <li class="specifications__li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, laborum?</li>
+                        <li class="specifications__li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni voluptate nulla quia, sunt maiores optio. Dolorum numquam earum, fugit deleniti assumenda recusandae odit voluptatibus deserunt explicabo porro ut iusto possimus, quia velit optio facere perferendis doloremque iure! Repudiandae aut similique nesciunt qui doloremque mollitia repellat minima quis quaerat fugit?</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer page__footer">
+        <div class="container">
+            <div class="row justify-content-between flex-xs-column align-items-center justify-content-center footer__contant">
+                <!-- logo -->
+                <div class="col-12 col-sm-3 d-flex justify-content-center justify-content-sm-start">
+                    <a href="#">
+                        <img src="./../../img/index/header/logo.svg" alt="logo" srcset="" class="scale">
+                    </a>
+                </div>
+                <!-- nav -->
+                <div class="d-none d-md-block col-9 col-md-6 col-lg-6">
+                    <div class="navigation">
+                        <nav class="navigation__items">
+                            <ul class="navigation__wrapper justify-content-center">
+                                <li>
+                                    <a href="#" class="button shadow"> Микрофоны</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="button shadow"> Колонки</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="button shadow"> Парогенераторы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="button shadow"> Пульты/Микшеры</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="button shadow"> Свет. напр. света</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="button shadow"> Бимы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="button shadow"> Бимы</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- contact -->
+                <div class="col-12 col-sm-3 col-md-3 col-lg-2 d-flex justify-content-center">
+                    <div class="contact">
+                        <p class="contact__text">
+                            <a href="tel:+79999999999" class="text">+7 (999) 999 99-99</a>
+                        </p>
+                        <p class="contact__text">
+                            <a href="mailto:sales@arenda.ru" class="text">sales@arenda.ru</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

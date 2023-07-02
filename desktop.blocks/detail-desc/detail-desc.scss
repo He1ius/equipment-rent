@@ -1,0 +1,14 @@
+.detail-desc__wrapp{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.detail-desc__iteractive{
+    display: flex;
+    column-gap: 36px;
+    row-gap: 18px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+

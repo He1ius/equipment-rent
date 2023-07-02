@@ -1,0 +1,23 @@
+.payment__form{
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+}
+.payment__input{
+    padding: 16px 10px;
+    margin-bottom: 19px;
+}
+.payment__price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.payment__submit{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding: 13px 133px;
+}

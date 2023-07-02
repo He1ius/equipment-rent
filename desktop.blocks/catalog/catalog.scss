@@ -1,0 +1,136 @@
+
+.catalog__view-all{
+    font-weight: 400;
+    font-size: 16px;
+
+    text-align: end;
+    white-space: nowrap;
+}
+.catalog__section{
+    margin-bottom: 90px;
+
+}
+.owl-item{
+    z-index: 1;
+}
+.owl-item:hover{
+    z-index: 100!important;
+}
+
+.catalog__wrapper{
+    width: 100%;
+    height: 500px;
+}
+.catalog__container{
+    width: 416px;
+    height: 500px;
+    z-index: 1;
+}
+.catalog__container:hover{
+    z-index: 100;
+}
+.catalog__item{
+    position: absolute;
+
+    padding: 8px;
+    cursor: pointer;
+
+    background-color: white;
+}
+.catalog__item--view-all{
+    max-width: 416px;
+    
+}
+.catalog__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    flex-wrap: wrap;
+    
+    margin-bottom: 40px;
+}
+.catalog__img{
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+}
+
+.catalog__img img{
+    width: 100%;
+    height: auto;
+}
+.catalog__name{
+    margin-bottom: 10px;
+}
+.catalog__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 10px;
+}
+.catalog__right{
+    display: flex;
+    gap: 7px;
+}
+.catalog__favourite{
+    max-width: 45px;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.catalog__favourite svg{
+    min-width: 18px;
+    min-height: 16px;
+    fill: none;
+}   
+.catalog__favourite:hover svg{
+    fill: rgb(168, 168, 168);
+}
+.catalog__favourite svg.svg--active{
+    fill: white;
+}
+.catalog__text{
+    opacity: 0;
+    max-height: 0px;
+    overflow: hidden;
+    transition: var(--transition);
+
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.catalog__item:hover .catalog__text{
+    opacity: 1;
+    max-height: 120px;
+}
+.catalog__items{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 44px;
+
+    justify-content: center;
+}
+
+@media(max-width:1200px){
+    .catalog__price--four{
+        font-size: 15px;
+    }
+    .catalog__price{
+        font-size: 15px;
+    }
+}
+@media(max-width:767px){
+    .catalog__right{
+        gap: 4px;
+    }
+}

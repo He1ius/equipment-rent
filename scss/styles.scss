@@ -1,0 +1,39 @@
+// Bootstrap
+@import "./../libs/bootstrap/scss/functions";
+@import "./../libs/bootstrap/scss/bootstrap-grid.scss";
+@import "./../libs/bootstrap/scss/bootstrap-reboot.scss";
+
+// Blocks
+@import "./../desktop.blocks/main/main.scss";
+@import "./../desktop.blocks/catalog/catalog.scss";
+@import "./../desktop.blocks/footer/footer.scss";
+
+    // header
+    @import "./../desktop.blocks/button/button.scss";
+    @import "./../desktop.blocks/header/header.scss";
+    @import "./../desktop.blocks/user-interaction-elements/user-interaction-elements.scss";
+    @import "./../desktop.blocks/search/search.scss";
+    @import "./../desktop.blocks/interaction-elements/interaction-elements.scss";
+    @import "./../desktop.blocks/contact/contact.scss";
+    @import "./../desktop.blocks/navigation/navigation.scss";
+    // index
+    @import "./../desktop.blocks/anounc/anounc.scss";
+    // cart
+    @import "./../desktop.blocks/cart/cart.scss";
+    @import "./../desktop.blocks/payment/payment.scss";
+    @import "./../desktop.blocks/count/count.scss";
+    // detail
+    @import "./../desktop.blocks/detail-cart/detail-cart.scss";
+    @import "./../desktop.blocks/detail-desc/detail-desc.scss";
+    @import "./../desktop.blocks/gallery/gallery.scss";
+    @import "./../desktop.blocks/specifications/specifications.scss";
+
+// Vars
+@import "./../scss/vars.scss";
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+// Common blocks
+@import "./../scss/common-blocks.scss";

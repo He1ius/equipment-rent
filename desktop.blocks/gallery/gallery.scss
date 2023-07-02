@@ -1,0 +1,19 @@
+
+.gallery__title{
+    margin-bottom: 30px;
+}
+
+.gallery__item{
+    padding: 10px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: zoom-in;
+}
+.gallery__item img{
+    width: 100%;
+    height: auto;
+}

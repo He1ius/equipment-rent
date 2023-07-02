@@ -1,0 +1,30 @@
+.button{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+
+    padding: 7px 20px;
+    
+    font-size: 16px;
+    font-weight: 400;
+
+    border-radius: 20px;
+
+    transition: var(--transition);
+    color: black;
+}
+.button:hover{
+    background-color: var(--color);
+    color: white;
+}
+
+.button--violet{
+    background-color: var(--color);
+    color: white;
+    
+}
+
+.button--violet:hover{
+    background-color: var(--color-hover);
+}

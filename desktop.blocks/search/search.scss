@@ -1,0 +1,29 @@
+.search{
+    min-height: 40px;
+    
+    border-color: #BBBBBB;
+    border-radius: 70px;
+    border-width: 1px;
+    border-style: solid;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 12px;
+    padding-right: 12px;
+
+    transition: var(--transition);
+    cursor: text;
+}
+.search__submit{
+    width: 18px;
+    height: 18px;
+
+    background: url("./../../desktop.blocks/search/img/search-loop.svg")!important;
+
+    margin-right: 10px;
+}   
+.search__text{
+    width: 100%;
+}

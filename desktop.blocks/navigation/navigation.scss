@@ -1,0 +1,29 @@
+.navigation__items{
+    display: flex;
+    align-items: center;
+    
+}
+.navigation__wrapper{
+    width: 100%;
+    padding: 8px 13px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 25px;
+    row-gap: 8px;
+
+}
+
+@media(max-width: 1400px){
+    .navigation__wrapper{
+        justify-content: center;
+    }
+}
+@media(max-width: 768px){
+    .navigation__wrapper li{
+        width: 100%;
+    }
+}
